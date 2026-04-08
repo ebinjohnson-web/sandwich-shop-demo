@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brick &amp; Board Sandwich Co. | Local Sandwich Shop Demo</title>
-  <meta name="description" content="Brick & Board Sandwich Co. is a warm, modern sandwich shop demo with premium lunch favourites, catering, and a polished local feel.">
+  <title>Brick & Board Sandwich Co. | Sandwich Shop Demo</title>
+  <meta name="description" content="Warm, polished sandwich shop demo with real food photography, motion, catering, and a premium local café feel.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-home">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <div class="site-shell">
     <header class="site-header">
       <div class="container header-row">
-        <a class="brand" href="index.html" aria-label="Brick & Board Sandwich Co. home">
+        <a class="brand" href="index.html" aria-label="Brick &amp; Board Sandwich Co. home">
           <span class="brand-mark">B&amp;B</span>
           <span class="brand-text">
             <strong>Brick &amp; Board</strong>
@@ -29,85 +31,126 @@
 
         <nav class="site-nav" id="siteNav" aria-label="Primary">
           <a class="is-active" href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="menu.html">Menu</a>
-          <a href="catering.html">Catering</a>
-          <a href="contact.html">Contact</a>
+          <a class="" href="about.html">About</a>
+          <a class="" href="menu.html">Menu</a>
+          <a class="" href="catering.html">Catering</a>
+          <a class="" href="contact.html">Contact</a>
           <a class="nav-cta" href="contact.html">Order now</a>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="hero hero-home">
-        <div class="hero-media parallax-media" data-parallax style="background-image: url('assets/images/hero-sandwich.jpg');"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content hero-center">
+    <main id="mainContent">
+      <section class="hero">
+        <div class="hero-media" data-parallax style="--hero-image: url('assets/images/hero-sandwich.jpg');"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-orbits" aria-hidden="true">
+            <div class="orbit-chip one">Fresh bread daily</div>
+            <div class="orbit-chip two" style="--delay: 1.6s;">Pickup in 15 minutes</div>
+            <div class="orbit-chip three" style="--delay: 0.8s;">Lunch platters for teams</div>
+            <div class="orbit-chip four" style="--delay: 2.1s;">Quick, warm, local</div>
+          </div>
+
           <div class="eyebrow reveal">Fictional Ontario sandwich shop demo</div>
-          <h1 class="display-title reveal">Warm bread. Sharp flavours. Fast lunch done right.</h1>
-          <p class="hero-copy reveal">A polished sample site for a local sandwich shop, café, or lunch spot that wants to feel warm, modern, and easy to trust.</p>
-          <div class="hero-actions reveal">
-            <a class="button button-primary button-xl" href="contact.html">Order now</a>
+          <h1 class="reveal" style="--delay: 1;">Warm bread. Sharp flavour. Fast lunch.</h1>
+          <p class="hero-copy reveal" style="--delay: 2;">A cleaner, warmer website concept for a local sandwich shop, café, or lunch counter that wants to feel modern and easy to trust.</p>
+
+          <div class="hero-actions reveal" style="--delay: 3;">
+            <a class="button button-primary" href="contact.html">Order now <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 4l5 6-5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             <a class="button button-secondary" href="menu.html">See the menu</a>
           </div>
-          <div class="hero-pill reveal">
-            <span>Fresh daily</span>
-            <span>Lunch platters</span>
-            <span>Quick pickup</span>
+
+          <div class="hero-badges reveal" style="--delay: 4;">
+            <span>Pressed sandwiches</span>
+            <span>Lunch boxes</span>
+            <span>Catering trays</span>
+          </div>
+
+          <div class="hero-stats reveal" style="--delay: 5;">
+            <div class="stat-card">
+              <strong>12</strong>
+              <span>Core sandwiches kept easy to scan.</span>
+            </div>
+            <div class="stat-card">
+              <strong>15 min</strong>
+              <span>Built around quick lunch pickup flow.</span>
+            </div>
+            <div class="stat-card">
+              <strong>Group ready</strong>
+              <span>Boxes and trays sized for teams and events.</span>
+            </div>
           </div>
         </div>
       </section>
+
+      <div class="marquee" aria-label="Shop highlights">
+        <div class="marquee-track">
+          <span class="marquee-item">Pressed to order</span>
+          <span class="marquee-item">House spreads</span>
+          <span class="marquee-item">Lunch trays</span>
+          <span class="marquee-item">Quick pickup</span>
+          <span class="marquee-item">Warm local feel</span>
+          <span class="marquee-item">Easy catering</span>
+          <span class="marquee-item">Pressed to order</span>
+          <span class="marquee-item">House spreads</span>
+          <span class="marquee-item">Lunch trays</span>
+          <span class="marquee-item">Quick pickup</span>
+          <span class="marquee-item">Warm local feel</span>
+          <span class="marquee-item">Easy catering</span>
+        </div>
+      </div>
 
       <section class="section section-tight">
         <div class="container">
-          <div class="section-heading reveal">
+          <div class="section-head reveal">
             <div class="eyebrow">Best sellers</div>
-            <h2>Built for busy lunch hours</h2>
-            <p>Short names, clear choices, easy scanning.</p>
+            <h2>Built for busy lunch hours.</h2>
+            <p>Short names, clean layouts, real photos, and faster browsing.</p>
           </div>
 
-          <div class="feature-grid feature-grid-three">
-            <article class="food-card reveal">
-              <div class="food-card-image">
-                <img src="assets/images/signature-board.jpg" alt="Signature sandwiches on a board">
+          <div class="feature-grid three">
+            <article class="food-card tilt-card card-glow reveal" style="--delay: 1;">
+              <div class="food-card-media">
+                <img src="assets/images/signature-board.jpg" alt="Large deli sandwich on a wooden board">
               </div>
               <div class="food-card-body">
-                <div class="food-card-meta">Signature</div>
-                <h3>The King Street Stack</h3>
-                <p>Roasted chicken, smoked cheddar, pickled slaw, greens, house spread.</p>
-                <div class="food-card-footer">
-                  <span>$14.50</span>
-                  <a href="menu.html">View item</a>
+                <div class="food-meta">Hot favourite</div>
+                <h3>The Front Street Melt</h3>
+                <p>Roasted turkey, provolone, greens, tomato, and house mustard on pressed bread.</p>
+                <div class="food-footer">
+                  <strong>$14.25</strong>
+                  <a class="link-arrow" href="menu.html">View item <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 4l5 6-5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                 </div>
               </div>
             </article>
 
-            <article class="food-card reveal">
-              <div class="food-card-image">
-                <img src="assets/images/hero-sandwich.jpg" alt="Large stacked sandwich">
+            <article class="food-card tilt-card card-glow reveal" style="--delay: 2;">
+              <div class="food-card-media">
+                <img src="assets/images/display-case.jpg" alt="Assorted deli sandwiches on display">
               </div>
               <div class="food-card-body">
-                <div class="food-card-meta">Hot favourite</div>
-                <h3>The Market Melt</h3>
-                <p>Turkey, provolone, tomato, greens, pressed warm on seeded bread.</p>
-                <div class="food-card-footer">
-                  <span>$13.75</span>
-                  <a href="menu.html">View item</a>
+                <div class="food-meta">Cold cut stack</div>
+                <h3>The Market Counter</h3>
+                <p>Mortadella, capicola, provolone, pickled peppers, and greens on sesame roll.</p>
+                <div class="food-footer">
+                  <strong>$15.50</strong>
+                  <a class="link-arrow" href="menu.html">View item <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 4l5 6-5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                 </div>
               </div>
             </article>
 
-            <article class="food-card reveal">
-              <div class="food-card-image">
-                <img src="assets/images/catering-platter.jpg" alt="Sandwich platter">
+            <article class="food-card tilt-card card-glow reveal" style="--delay: 3;">
+              <div class="food-card-media">
+                <img src="assets/images/catering-platter.jpg" alt="Box of assorted sandwiches for catering">
               </div>
               <div class="food-card-body">
-                <div class="food-card-meta">Group order</div>
-                <h3>Lunch Platter Box</h3>
-                <p>Assorted half sandwiches, chips, pickles, and house cookies for sharing.</p>
-                <div class="food-card-footer">
-                  <span>From $74</span>
-                  <a href="catering.html">See catering</a>
+                <div class="food-meta">Group order</div>
+                <h3>Lunch Tray Box</h3>
+                <p>Mixed halves, labels, chips, cookies, and a clean setup for easy sharing.</p>
+                <div class="food-footer">
+                  <strong>From $78</strong>
+                  <a class="link-arrow" href="catering.html">See catering <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 4l5 6-5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                 </div>
               </div>
             </article>
@@ -115,84 +158,93 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container split-section split-section-wide">
+      <section class="section section-sand">
+        <div class="container split">
           <div class="split-media reveal">
-            <img src="assets/images/shop-interior.jpg" alt="Warm sandwich shop interior">
-          </div>
-          <div class="split-copy reveal">
-            <div class="eyebrow">Short story</div>
-            <h2>A local shop feel with a cleaner, more premium presentation.</h2>
-            <p>Brick &amp; Board Sandwich Co. is a fictional brand created to feel believable for an Ontario lunch shop. The tone is practical, friendly, and a little elevated without feeling formal.</p>
-            <div class="check-list">
-              <div>Fresh breads and quick lunch prep</div>
-              <div>Clear pickup, dine-in, and catering paths</div>
-              <div>Easy-to-edit page layout for future text updates</div>
+            <img src="assets/images/shop-interior.jpg" alt="Sandwich and café counter interior">
+            <div class="split-media-badge">
+              <strong>Real-photo direction</strong>
+              <span>Warmer, more believable, and easier to pitch as a local demo.</span>
             </div>
-            <a class="text-link" href="about.html">Read the shop story</a>
+          </div>
+
+          <div class="split-copy">
+            <div class="eyebrow reveal">Short story</div>
+            <h2 class="reveal" style="--delay: 1;">A local shop feel with a cleaner premium edge.</h2>
+            <p class="reveal" style="--delay: 2;">Brick &amp; Board is fictional, but the structure is meant to feel like a real Ontario lunch spot: simple menu paths, quick contact options, and strong food-first visuals.</p>
+
+            <div class="check-list">
+              <div class="reveal" style="--delay: 3;"><strong>Easy to scan</strong> Short sections and cleaner calls to action.</div>
+              <div class="reveal" style="--delay: 4;"><strong>Real food imagery</strong> Local-shop tone without the fake placeholder look.</div>
+              <div class="reveal" style="--delay: 5;"><strong>Editable layout</strong> Text blocks are simple to change later in VS Code.</div>
+            </div>
+
+            <div class="section-actions reveal" style="--delay: 6;">
+              <a class="button button-primary" href="about.html">Read the story</a>
+              <a class="button button-ghost" href="contact.html">Ask about a website</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-dark">
+      <section class="section section-dark" style="--hero-image: url('assets/images/menu-counter.jpg');">
         <div class="container">
-          <div class="section-heading reveal">
+          <div class="section-head reveal">
             <div class="eyebrow">Catering preview</div>
             <h2>Office lunches, team days, church events, and family gatherings.</h2>
-            <p>Simple packages with clean details.</p>
+            <p>Clear packages. Clean pickup. Faster quoting.</p>
           </div>
 
-          <div class="card-row card-row-three">
-            <article class="panel reveal">
+          <div class="package-grid three">
+            <article class="panel tilt-card reveal" style="--delay: 1;">
               <span class="panel-kicker">01</span>
-              <h3>Classic sandwich tray</h3>
-              <p>12 halves, pickles, chips, and labels for quick setup.</p>
-              <strong>From $74</strong>
+              <h3>Classic tray</h3>
+              <p>12 halves, pickles, chips, labels, and fast handoff for smaller teams.</p>
+              <strong>From $78</strong>
             </article>
-            <article class="panel reveal">
+            <article class="panel tilt-card reveal" style="--delay: 2;">
               <span class="panel-kicker">02</span>
-              <h3>Lunch box drop-off</h3>
-              <p>Individually packed sandwiches, side, cookie, and napkin.</p>
-              <strong>From $16 per person</strong>
+              <h3>Lunch boxes</h3>
+              <p>Individually packed sandwich, side, cookie, and napkin for simple drop-off.</p>
+              <strong>From $16 pp</strong>
             </article>
-            <article class="panel reveal">
+            <article class="panel tilt-card reveal" style="--delay: 3;">
               <span class="panel-kicker">03</span>
               <h3>Meeting spread</h3>
-              <p>Mix of wraps, sandwiches, greens, sweets, and cold drinks.</p>
+              <p>Mixed sandwiches, wraps, greens, sweets, and drinks for longer team sessions.</p>
               <strong>Custom quote</strong>
             </article>
           </div>
 
-          <div class="section-actions reveal">
+          <div class="section-actions reveal" style="--delay: 4; margin-top: 1.6rem;">
             <a class="button button-primary" href="catering.html">Explore catering</a>
-            <a class="button button-secondary button-on-dark" href="contact.html">Ask for a quote</a>
+            <a class="button button-secondary" href="contact.html">Ask for a quote</a>
           </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="section-heading reveal">
-            <div class="eyebrow">Why choose us</div>
-            <h2>Clear reasons people come back.</h2>
+          <div class="section-head reveal">
+            <div class="eyebrow">Why it works</div>
+            <h2>Clear reasons customers would come back.</h2>
           </div>
 
-          <div class="advantage-grid">
-            <article class="advantage-card reveal">
-              <h3>Fast at noon</h3>
-              <p>Built for the lunch rush with short waits and clean pickup flow.</p>
+          <div class="info-grid three">
+            <article class="info-card tilt-card card-glow reveal" style="--delay: 1;">
+              <div class="kicker">Fast at noon</div>
+              <h3>Built for the lunch rush</h3>
+              <p>Buttons, menu cards, and contact paths are all set up to reduce hesitation.</p>
             </article>
-            <article class="advantage-card reveal">
-              <h3>Warm, not overdone</h3>
-              <p>Premium feel without making a simple sandwich order complicated.</p>
+            <article class="info-card tilt-card card-glow reveal" style="--delay: 2;">
+              <div class="kicker">Warm visual tone</div>
+              <h3>Less generic</h3>
+              <p>Real food and counter shots feel more believable than abstract mockup art.</p>
             </article>
-            <article class="advantage-card reveal">
-              <h3>Good for groups</h3>
-              <p>Platters and boxes that work for small offices, teams, and events.</p>
-            </article>
-            <article class="advantage-card reveal">
-              <h3>Easy to trust</h3>
-              <p>Hours, pricing, menu paths, and contact details are all easy to find.</p>
+            <article class="info-card tilt-card card-glow reveal" style="--delay: 3;">
+              <div class="kicker">Practical</div>
+              <h3>Easy to update later</h3>
+              <p>The page structure stays readable, so small copy swaps are simple in HTML.</p>
             </article>
           </div>
         </div>
@@ -200,38 +252,45 @@
 
       <section class="section section-sand">
         <div class="container">
-          <div class="section-heading reveal">
+          <div class="section-head reveal">
             <div class="eyebrow">Reviews</div>
             <h2>Friendly, local, believable feedback.</h2>
           </div>
 
-          <div class="review-rotator reveal" data-review-rotator>
-            <article class="review-card is-active">
-              <p>“Quick pickup, warm bread, and the kind of lunch spot you end up using every week.”</p>
-              <strong>— Sarah M.</strong>
+          <div class="quote-slider" data-quote-slider>
+            <article class="quote-slide quote-card reveal is-active">
+              <p>“Quick pickup, warm bread, and way easier to order from than most lunch spots.”</p>
+              <span class="quote-credit">— Sarah M., downtown office manager</span>
             </article>
-            <article class="review-card">
-              <p>“The platter was easy for our office to share, looked clean, and everyone found something they liked.”</p>
-              <strong>— Daniel R.</strong>
+            <article class="quote-slide quote-card reveal">
+              <p>“The trays looked clean, the choices were simple, and the whole handoff felt organized.”</p>
+              <span class="quote-credit">— Daniel R., church admin lead</span>
             </article>
-            <article class="review-card">
-              <p>“Feels a bit more premium than the usual quick lunch places, but still practical and fast.”</p>
-              <strong>— Olivia T.</strong>
+            <article class="quote-slide quote-card reveal">
+              <p>“It feels a little more premium than a usual sandwich stop, but still quick and practical.”</p>
+              <span class="quote-credit">— Olivia T., regular lunch customer</span>
             </article>
+          </div>
+
+          <div class="slider-dots" role="tablist" aria-label="Reviews">
+            <button class="slider-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Show review 1"></button>
+            <button class="slider-dot" type="button" role="tab" aria-selected="false" aria-label="Show review 2"></button>
+            <button class="slider-dot" type="button" role="tab" aria-selected="false" aria-label="Show review 3"></button>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container cta-banner reveal">
+        <div class="container cta-banner tilt-card card-glow reveal">
           <div>
-            <div class="eyebrow">Call to action</div>
-            <h2>Use this as a demo concept for a real sandwich shop or café.</h2>
-            <p>Everything is fictional, but the structure is built to feel usable for a real small business site.</p>
+            <div class="eyebrow">Demo call to action</div>
+            <h2>Use this as a stronger sample site for a real sandwich shop or café.</h2>
+            <p>Everything here is fictional, but the structure is realistic enough to show as a concept.</p>
           </div>
-          <div class="cta-banner-actions">
+
+          <div class="cta-actions">
             <a class="button button-primary" href="contact.html">Start an inquiry</a>
-            <a class="button button-secondary" href="menu.html">Browse full menu</a>
+            <a class="button button-ghost" href="menu.html">Browse the menu</a>
           </div>
         </div>
       </section>
@@ -240,19 +299,19 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand brand-footer" href="index.html">
+          <a class="brand" href="index.html">
             <span class="brand-mark">B&amp;B</span>
             <span class="brand-text">
               <strong>Brick &amp; Board</strong>
               <span>Sandwich Co.</span>
             </span>
           </a>
-          <p class="footer-note">Fictional demo brand for a warm, premium local sandwich shop website concept.</p>
+          <p class="footer-note">Fictional sandwich shop demo with a warmer, more polished local café feel.</p>
         </div>
 
         <div>
           <h3>Visit</h3>
-          <p>12 Front Street West<br>Riverbend, ON A1A 1A1</p>
+          <p>128 Front Street West<br>Riverton, ON N0N 1N0</p>
         </div>
 
         <div>
@@ -270,6 +329,7 @@
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
         <div class="container footer-bottom-row">
           <span>© <span id="year"></span> Brick &amp; Board Sandwich Co.</span>

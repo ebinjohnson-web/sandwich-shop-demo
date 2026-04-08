@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Brick &amp; Board Sandwich Co.</title>
-  <meta name="description" content="About Brick & Board Sandwich Co., a fictional local sandwich shop website demo with a warm, modern feel.">
+  <title>About | Brick & Board Sandwich Co.</title>
+  <meta name="description" content="About page for a fictional sandwich shop demo with a believable local story, process, and premium visual direction.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-about">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <div class="site-shell">
     <header class="site-header">
       <div class="container header-row">
-        <a class="brand" href="index.html" aria-label="Brick & Board Sandwich Co. home">
+        <a class="brand" href="index.html" aria-label="Brick &amp; Board Sandwich Co. home">
           <span class="brand-mark">B&amp;B</span>
           <span class="brand-text">
             <strong>Brick &amp; Board</strong>
@@ -28,95 +30,145 @@
         </button>
 
         <nav class="site-nav" id="siteNav" aria-label="Primary">
-          <a href="index.html">Home</a>
+          <a class="" href="index.html">Home</a>
           <a class="is-active" href="about.html">About</a>
-          <a href="menu.html">Menu</a>
-          <a href="catering.html">Catering</a>
-          <a href="contact.html">Contact</a>
+          <a class="" href="menu.html">Menu</a>
+          <a class="" href="catering.html">Catering</a>
+          <a class="" href="contact.html">Contact</a>
           <a class="nav-cta" href="contact.html">Order now</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="mainContent">
       <section class="page-hero">
-        <div class="page-hero-media parallax-media" data-parallax style="background-image: url('assets/images/shop-interior.jpg');"></div>
-        <div class="page-hero-overlay"></div>
-        <div class="container page-hero-content">
-          <div class="eyebrow reveal">About the brand</div>
-          <h1 class="reveal">A believable sandwich shop concept with a clean local feel.</h1>
-          <p class="reveal">This fictional brand is designed to feel real enough for a café, sandwich counter, or quick-service lunch shop in Ontario.</p>
+        <div class="page-hero-media" data-parallax style="--hero-image: url('assets/images/shop-interior.jpg');"></div>
+        <div class="container page-hero-grid hero-split">
+          <div>
+            <div class="eyebrow reveal">About the brand</div>
+            <h1 class="reveal" style="--delay: 1;">Local lunch, made to feel better.</h1>
+            <p class="page-hero-copy reveal" style="--delay: 2;">A fictional sandwich shop story written to feel natural, practical, and believable for a modern Ontario lunch counter.</p>
+          </div>
+          <div class="page-hero-photo reveal" style="--delay: 3;">
+            <img src="assets/images/menu-counter.jpg" alt="Cafe counter with menu boards and display case">
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container split-section split-section-wide">
-          <div class="split-copy reveal">
-            <div class="eyebrow">The idea</div>
-            <h2>Warm, practical, and a little elevated.</h2>
-            <p>Brick &amp; Board is positioned between a casual lunch spot and a more polished café. The name suggests warmth, craft, and a grounded neighbourhood presence.</p>
-            <p>The website structure is kept clean so text can be changed later without fighting the layout.</p>
+        <div class="container split reverse">
+          <div class="split-copy">
+            <div class="eyebrow reveal">Shop story</div>
+            <h2 class="reveal" style="--delay: 1;">Built for people who want fast lunch without the rushed feel.</h2>
+            <p class="reveal" style="--delay: 2;">Brick &amp; Board started as a fictional concept around a simple idea: good bread, sharper flavours, and a cleaner experience for busy lunch breaks. The tone is warm, but still practical.</p>
+            <div class="process-list">
+              <div class="reveal" style="--delay: 3;"><strong>Fresh prep</strong> Daily bread, crisp greens, and quick counter-ready service.</div>
+              <div class="reveal" style="--delay: 4;"><strong>Short menu</strong> Enough variety without making ordering slow.</div>
+              <div class="reveal" style="--delay: 5;"><strong>Group options</strong> Catering paths that feel easy for offices and events.</div>
+            </div>
           </div>
+
           <div class="split-media reveal">
-            <img src="assets/images/hero-sandwich.jpg" alt="Large signature sandwich">
+            <img src="assets/images/display-case.jpg" alt="Sandwich display case">
+            <div class="split-media-badge">
+              <strong>Believable demo tone</strong>
+              <span>Designed to pitch well to real cafés, delis, or lunch shops.</span>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section section-sand">
         <div class="container">
-          <div class="section-heading reveal">
+          <div class="section-head reveal">
             <div class="eyebrow">What the brand stands for</div>
-            <h2>Simple principles that fit a local shop.</h2>
+            <h2>Warm, local, and easy to trust.</h2>
           </div>
-          <div class="card-row card-row-three">
-            <article class="panel reveal">
-              <span class="panel-kicker">01</span>
-              <h3>Good lunch, fast</h3>
-              <p>Fresh sandwiches without making customers wait longer than they should.</p>
+
+          <div class="story-grid three">
+            <article class="story-card tilt-card card-glow reveal" style="--delay: 1;">
+              <div class="kicker">Fresh first</div>
+              <h3>Food leads the brand</h3>
+              <p>Photography and layout are built around the product, not decorative filler.</p>
             </article>
-            <article class="panel reveal">
-              <span class="panel-kicker">02</span>
-              <h3>Clear choices</h3>
-              <p>Less clutter, stronger item names, and easy paths for ordering and catering.</p>
+            <article class="story-card tilt-card card-glow reveal" style="--delay: 2;">
+              <div class="kicker">Clear service</div>
+              <h3>Fast to understand</h3>
+              <p>Order, menu, and catering paths stay visible without making the page feel busy.</p>
             </article>
-            <article class="panel reveal">
-              <span class="panel-kicker">03</span>
-              <h3>Neighbourhood warmth</h3>
-              <p>A tone that feels friendly and local without looking dated or overly casual.</p>
+            <article class="story-card tilt-card card-glow reveal" style="--delay: 3;">
+              <div class="kicker">Practical polish</div>
+              <h3>Premium, not precious</h3>
+              <p>The tone feels elevated without sounding like a fine-dining restaurant.</p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container split-section">
-          <div class="split-media reveal">
-            <img src="assets/images/signature-board.jpg" alt="Sandwiches served on a board">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow">How the experience flows</div>
+            <h2>From first click to pickup.</h2>
           </div>
-          <div class="split-copy reveal">
+
+          <div class="timeline-grid two">
+            <article class="timeline-card tilt-card card-glow reveal" style="--delay: 1;">
+              <div class="timeline-step">01</div>
+              <h3>See the food fast</h3>
+              <p>Hero visuals and best sellers make the shop feel real before the user reads much text.</p>
+            </article>
+            <article class="timeline-card tilt-card card-glow reveal" style="--delay: 2;">
+              <div class="timeline-step">02</div>
+              <h3>Pick a path</h3>
+              <p>Visitors can go to menu, order, or catering without guessing where to click next.</p>
+            </article>
+            <article class="timeline-card tilt-card card-glow reveal" style="--delay: 3;">
+              <div class="timeline-step">03</div>
+              <h3>Get the details quickly</h3>
+              <p>Hours, address, contact info, and social links stay near the footer on every page.</p>
+            </article>
+            <article class="timeline-card tilt-card card-glow reveal" style="--delay: 4;">
+              <div class="timeline-step">04</div>
+              <h3>Edit later without friction</h3>
+              <p>The site remains readable in VS Code, so text swaps and image replacements are straightforward.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" style="--hero-image: url('assets/images/signature-board.jpg');">
+        <div class="container">
+          <div class="section-head reveal">
             <div class="eyebrow">Visual direction</div>
-            <h2>Rich food imagery, warm neutrals, and strong spacing.</h2>
-            <p>The design uses oversized imagery, strong headings, rounded panels, and generous white space. That combination helps the site feel modern and premium without becoming too fancy.</p>
-            <div class="check-list">
-              <div>Warm cream, brown, amber, and greens</div>
-              <div>Display serif for emphasis, clean sans serif for readability</div>
-              <div>Motion on scroll, soft parallax, and layered panels</div>
+            <h2>Food-first photography and warmer contrast.</h2>
+            <p>The update uses real images and stronger motion so the demo feels more like a finished local business site.</p>
+          </div>
+
+          <div class="gallery-strip">
+            <div class="gallery-frame tall reveal" style="--delay: 1;">
+              <img src="assets/images/signature-board.jpg" alt="Signature sandwich on wooden board">
+            </div>
+            <div class="gallery-frame reveal" style="--delay: 2;">
+              <img src="assets/images/menu-counter.jpg" alt="Menu counter in cafe">
+            </div>
+            <div class="gallery-frame reveal" style="--delay: 3;">
+              <img src="assets/images/catering-platter.jpg" alt="Catering sandwich box">
             </div>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container cta-banner reveal">
+        <div class="container cta-banner tilt-card card-glow reveal">
           <div>
             <div class="eyebrow">Next step</div>
-            <h2>Ready to see the food structure?</h2>
-            <p>Browse the menu and catering layouts built into the demo.</p>
+            <h2>Ready to show menu and catering pages too.</h2>
+            <p>The same brand direction continues across the rest of the site for a more complete sample.</p>
           </div>
-          <div class="cta-banner-actions">
+          <div class="cta-actions">
             <a class="button button-primary" href="menu.html">See the menu</a>
-            <a class="button button-secondary" href="catering.html">See catering</a>
+            <a class="button button-ghost" href="catering.html">See catering</a>
           </div>
         </div>
       </section>
@@ -125,23 +177,26 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand brand-footer" href="index.html">
+          <a class="brand" href="index.html">
             <span class="brand-mark">B&amp;B</span>
             <span class="brand-text">
               <strong>Brick &amp; Board</strong>
               <span>Sandwich Co.</span>
             </span>
           </a>
-          <p class="footer-note">Fictional demo brand for a warm, premium local sandwich shop website concept.</p>
+          <p class="footer-note">Fictional sandwich shop demo with a warmer, more polished local café feel.</p>
         </div>
+
         <div>
           <h3>Visit</h3>
-          <p>12 Front Street West<br>Riverbend, ON A1A 1A1</p>
+          <p>128 Front Street West<br>Riverton, ON N0N 1N0</p>
         </div>
+
         <div>
           <h3>Hours</h3>
           <p>Mon–Fri: 8am–6pm<br>Sat: 9am–4pm<br>Sun: Closed</p>
         </div>
+
         <div>
           <h3>Contact</h3>
           <p>(519) 555-0142<br>hello@brickandboarddemo.ca</p>
@@ -152,6 +207,7 @@
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
         <div class="container footer-bottom-row">
           <span>© <span id="year"></span> Brick &amp; Board Sandwich Co.</span>

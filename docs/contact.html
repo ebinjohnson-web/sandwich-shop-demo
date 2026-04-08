@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Brick &amp; Board Sandwich Co.</title>
-  <meta name="description" content="Contact Brick & Board Sandwich Co. for orders, catering, and store details.">
+  <title>Contact | Brick & Board Sandwich Co.</title>
+  <meta name="description" content="Contact page for a fictional sandwich shop demo with order, catering, hours, and an inquiry form layout.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-contact">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <div class="site-shell">
     <header class="site-header">
       <div class="container header-row">
-        <a class="brand" href="index.html" aria-label="Brick & Board Sandwich Co. home">
+        <a class="brand" href="index.html" aria-label="Brick &amp; Board Sandwich Co. home">
           <span class="brand-mark">B&amp;B</span>
           <span class="brand-text">
             <strong>Brick &amp; Board</strong>
@@ -28,98 +30,126 @@
         </button>
 
         <nav class="site-nav" id="siteNav" aria-label="Primary">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="menu.html">Menu</a>
-          <a href="catering.html">Catering</a>
+          <a class="" href="index.html">Home</a>
+          <a class="" href="about.html">About</a>
+          <a class="" href="menu.html">Menu</a>
+          <a class="" href="catering.html">Catering</a>
           <a class="is-active" href="contact.html">Contact</a>
           <a class="nav-cta" href="contact.html">Order now</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="mainContent">
       <section class="page-hero">
-        <div class="page-hero-media parallax-media" data-parallax style="background-image: url('assets/images/shop-interior.jpg');"></div>
-        <div class="page-hero-overlay"></div>
-        <div class="container page-hero-content">
-          <div class="eyebrow reveal">Contact</div>
-          <h1 class="reveal">Order, ask about catering, or stop by for lunch.</h1>
-          <p class="reveal">This demo uses straightforward contact details and one simple inquiry form.</p>
+        <div class="page-hero-media" data-parallax style="--hero-image: url('assets/images/menu-counter.jpg');"></div>
+        <div class="container page-hero-grid hero-split">
+          <div>
+            <div class="eyebrow reveal">Contact</div>
+            <h1 class="reveal" style="--delay: 1;">Order, ask, or stop by.</h1>
+            <p class="page-hero-copy reveal" style="--delay: 2;">Simple contact details, hours, and a form that works for both regular orders and catering questions.</p>
+          </div>
+          <div class="page-hero-photo reveal" style="--delay: 3;">
+            <img src="assets/images/shop-interior.jpg" alt="Cafe counter interior">
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container contact-layout">
-          <div class="contact-stack reveal">
-            <article class="contact-card">
+        <div class="container contact-layout two">
+          <div class="contact-stack">
+            <article class="contact-card tilt-card card-glow reveal">
               <div class="eyebrow">Visit</div>
               <h2>Brick &amp; Board Sandwich Co.</h2>
-              <p>12 Front Street West<br>Riverbend, ON A1A 1A1</p>
-            </article>
-
-            <article class="contact-card">
-              <div class="eyebrow">Hours</div>
-              <p>Mon–Fri: 8am–6pm<br>Sat: 9am–4pm<br>Sun: Closed</p>
-            </article>
-
-            <article class="contact-card">
-              <div class="eyebrow">Reach us</div>
-              <p>(519) 555-0142<br>hello@brickandboarddemo.ca</p>
-              <div class="social-links">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">TikTok</a>
+              <p>128 Front Street West<br>Riverton, ON N0N 1N0</p>
+              <div class="inline-stats">
+                <span>Mon–Fri: 8am–6pm</span>
+                <span>Sat: 9am–4pm</span>
               </div>
+            </article>
+
+            <article class="contact-card tilt-card card-glow reveal" style="--delay: 1;">
+              <div class="eyebrow">Call or email</div>
+              <h2>(519) 555-0142</h2>
+              <p>hello@brickandboarddemo.ca</p>
+              <div class="social-links">
+                <a href="contact.html">Instagram</a>
+                <a href="contact.html">Facebook</a>
+                <a href="contact.html">TikTok</a>
+              </div>
+            </article>
+
+            <article class="contact-card tilt-card card-glow reveal" style="--delay: 2;">
+              <div class="eyebrow">Order notes</div>
+              <h2>What this page should answer</h2>
+              <p>Hours, address, basic ordering info, and a clear catering contact path — all without making the customer work for it.</p>
             </article>
           </div>
 
-          <div class="form-panel reveal">
+          <article class="form-panel tilt-card card-glow reveal" style="--delay: 1;">
             <div class="eyebrow">Inquiry form</div>
-            <h2>Tell us what you need.</h2>
-            <form class="site-form" action="#">
+            <h2>Send a message</h2>
+            <p>This demo form is static, but the layout is ready for a real form service later.</p>
+
+            <form class="site-form">
               <label>
                 <span>Name</span>
                 <input type="text" name="name" placeholder="Your name">
               </label>
+
               <label>
                 <span>Email</span>
                 <input type="email" name="email" placeholder="you@example.com">
               </label>
+
               <label>
                 <span>Phone</span>
-                <input type="tel" name="phone" placeholder="(555) 555-5555">
+                <input type="tel" name="phone" placeholder="(519) 555-0000">
               </label>
+
               <label>
-                <span>Inquiry type</span>
-                <select name="type">
+                <span>Reason</span>
+                <select name="reason">
                   <option>General question</option>
                   <option>Pickup order</option>
                   <option>Catering quote</option>
+                  <option>Hours / location</option>
                 </select>
               </label>
+
               <label class="form-full">
                 <span>Message</span>
-                <textarea name="message" rows="6" placeholder="Tell us the date, group size, or what you want to order."></textarea>
+                <textarea name="message" rows="6" placeholder="Tell us what you need."></textarea>
               </label>
-              <div class="form-actions">
-                <button class="button button-primary" type="submit">Send inquiry</button>
-                <span class="form-note">Demo form only. No backend is connected.</span>
+
+              <div class="form-full form-actions">
+                <button class="button button-primary" type="button">Send inquiry</button>
+                <span class="form-note">Static demo form. No live submission is connected.</span>
               </div>
             </form>
-          </div>
+          </article>
         </div>
       </section>
 
       <section class="section section-sand">
-        <div class="container cta-banner reveal">
-          <div>
-            <div class="eyebrow">Need the menu first?</div>
-            <h2>Review the food and pricing layout.</h2>
+        <div class="container split">
+          <div class="mini-map reveal">
+            <div>
+              <div class="eyebrow" style="justify-content: center;">Location placeholder</div>
+              <h2 style="font-size: clamp(2rem, 4vw, 3.6rem);">Map area</h2>
+              <p style="margin: 0;">Swap this block for a real embed later, or keep it as a clean address section.</p>
+            </div>
           </div>
-          <div class="cta-banner-actions">
-            <a class="button button-primary" href="menu.html">Open menu</a>
-            <a class="button button-secondary" href="catering.html">Open catering</a>
+
+          <div class="split-copy">
+            <div class="eyebrow reveal">Best practice</div>
+            <h2 class="reveal" style="--delay: 1;">Keep contact pages light.</h2>
+            <p class="reveal" style="--delay: 2;">Most small business contact pages work better when they answer the basics quickly and avoid too many extra steps.</p>
+            <div class="pill-list">
+              <div class="reveal" style="--delay: 3;">One clear inquiry form</div>
+              <div class="reveal" style="--delay: 4;">Hours visible near the top</div>
+              <div class="reveal" style="--delay: 5;">Address and social links on the same page</div>
+            </div>
           </div>
         </div>
       </section>
@@ -128,23 +158,26 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand brand-footer" href="index.html">
+          <a class="brand" href="index.html">
             <span class="brand-mark">B&amp;B</span>
             <span class="brand-text">
               <strong>Brick &amp; Board</strong>
               <span>Sandwich Co.</span>
             </span>
           </a>
-          <p class="footer-note">Fictional demo brand for a warm, premium local sandwich shop website concept.</p>
+          <p class="footer-note">Fictional sandwich shop demo with a warmer, more polished local café feel.</p>
         </div>
+
         <div>
           <h3>Visit</h3>
-          <p>12 Front Street West<br>Riverbend, ON A1A 1A1</p>
+          <p>128 Front Street West<br>Riverton, ON N0N 1N0</p>
         </div>
+
         <div>
           <h3>Hours</h3>
           <p>Mon–Fri: 8am–6pm<br>Sat: 9am–4pm<br>Sun: Closed</p>
         </div>
+
         <div>
           <h3>Contact</h3>
           <p>(519) 555-0142<br>hello@brickandboarddemo.ca</p>
@@ -155,6 +188,7 @@
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
         <div class="container footer-bottom-row">
           <span>© <span id="year"></span> Brick &amp; Board Sandwich Co.</span>

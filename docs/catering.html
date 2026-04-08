@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catering | Brick &amp; Board Sandwich Co.</title>
-  <meta name="description" content="Catering packages for Brick & Board Sandwich Co., including platters, boxed lunches, and meeting spreads.">
+  <title>Catering | Brick & Board Sandwich Co.</title>
+  <meta name="description" content="Catering page for a fictional sandwich shop demo with trays, lunch boxes, event use cases, and a clean inquiry flow.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-catering">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <div class="site-shell">
     <header class="site-header">
       <div class="container header-row">
-        <a class="brand" href="index.html" aria-label="Brick & Board Sandwich Co. home">
+        <a class="brand" href="index.html" aria-label="Brick &amp; Board Sandwich Co. home">
           <span class="brand-mark">B&amp;B</span>
           <span class="brand-text">
             <strong>Brick &amp; Board</strong>
@@ -28,111 +30,171 @@
         </button>
 
         <nav class="site-nav" id="siteNav" aria-label="Primary">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="menu.html">Menu</a>
+          <a class="" href="index.html">Home</a>
+          <a class="" href="about.html">About</a>
+          <a class="" href="menu.html">Menu</a>
           <a class="is-active" href="catering.html">Catering</a>
-          <a href="contact.html">Contact</a>
+          <a class="" href="contact.html">Contact</a>
           <a class="nav-cta" href="contact.html">Order now</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="mainContent">
       <section class="page-hero">
-        <div class="page-hero-media parallax-media" data-parallax style="background-image: url('assets/images/catering-platter.jpg');"></div>
-        <div class="page-hero-overlay"></div>
-        <div class="container page-hero-content">
-          <div class="eyebrow reveal">Catering</div>
-          <h1 class="reveal">Simple group ordering for offices, meetings, and local events.</h1>
-          <p class="reveal">Packages are written to be easy to compare and easy to quote.</p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container card-row card-row-three">
-          <article class="panel reveal">
-            <span class="panel-kicker">Starter</span>
-            <h3>Classic tray</h3>
-            <p>12 half sandwiches, chips, pickles, and napkins.</p>
-            <strong>Serves 6 · From $74</strong>
-          </article>
-          <article class="panel reveal">
-            <span class="panel-kicker">Most ordered</span>
-            <h3>Office lunch box</h3>
-            <p>Individually packed sandwich, side, cookie, and label.</p>
-            <strong>From $16 per guest</strong>
-          </article>
-          <article class="panel reveal">
-            <span class="panel-kicker">Large group</span>
-            <h3>Meeting spread</h3>
-            <p>Mixed sandwich tray, wraps, greens, cookies, and drinks.</p>
-            <strong>Custom quote</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-sand">
-        <div class="container split-section split-section-wide">
-          <div class="split-media reveal">
-            <img src="assets/images/catering-platter.jpg" alt="Catering tray with assorted sandwiches">
+        <div class="page-hero-media" data-parallax style="--hero-image: url('assets/images/catering-platter.jpg');"></div>
+        <div class="container page-hero-grid hero-split">
+          <div>
+            <div class="eyebrow reveal">Catering</div>
+            <h1 class="reveal" style="--delay: 1;">Lunch for groups without the mess.</h1>
+            <p class="page-hero-copy reveal" style="--delay: 2;">Simple packages for offices, church events, volunteer teams, meetings, and family gatherings.</p>
           </div>
-          <div class="split-copy reveal">
-            <div class="eyebrow">How it works</div>
-            <h2>Short, practical catering flow.</h2>
-            <div class="process-list">
-              <div>
-                <strong>1. Send guest count</strong>
-                <p>Share your event date, pickup or delivery timing, and rough headcount.</p>
-              </div>
-              <div>
-                <strong>2. Choose a package</strong>
-                <p>We recommend trays for shared lunches and boxes for meetings.</p>
-              </div>
-              <div>
-                <strong>3. Confirm details</strong>
-                <p>Finalize dietary notes, item mix, and service time.</p>
-              </div>
-            </div>
+          <div class="page-hero-photo reveal" style="--delay: 3;">
+            <img src="assets/images/display-case.jpg" alt="Assorted sandwiches on display">
           </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="section-heading reveal">
-            <div class="eyebrow">Sample extras</div>
-            <h2>Add-ons that make the order feel complete.</h2>
+          <div class="section-head reveal">
+            <div class="eyebrow">Packages</div>
+            <h2>Built to quote fast.</h2>
+            <p>Each package is clear enough to help the customer say yes quickly.</p>
           </div>
 
-          <div class="advantage-grid">
-            <article class="advantage-card reveal">
-              <h3>Soup pots</h3>
-              <p>Tomato basil or roasted vegetable.</p>
+          <div class="package-grid three">
+            <article class="panel tilt-card card-glow reveal" style="--delay: 1;">
+              <div class="panel-media">
+                <img src="assets/images/catering-platter.jpg" alt="Sandwich platter box">
+              </div>
+              <span class="panel-kicker">Tray</span>
+              <h3>Classic tray</h3>
+              <p>12 half sandwiches, chips, labels, and pickles for easy sharing.</p>
+              <strong>From $78</strong>
             </article>
-            <article class="advantage-card reveal">
-              <h3>House cookies</h3>
-              <p>Simple dessert add-on for team lunches.</p>
+
+            <article class="panel tilt-card card-glow reveal" style="--delay: 2;">
+              <div class="panel-media">
+                <img src="assets/images/signature-board.jpg" alt="Large sandwich on wooden board">
+              </div>
+              <span class="panel-kicker">Boxed lunch</span>
+              <h3>Lunch drop-off</h3>
+              <p>Individual sandwich, side, cookie, and napkin packed for grab-and-go.</p>
+              <strong>From $16 per person</strong>
             </article>
-            <article class="advantage-card reveal">
-              <h3>Cold drinks</h3>
-              <p>Lemonade, iced tea, canned sparkling water.</p>
-            </article>
-            <article class="advantage-card reveal">
-              <h3>Dietary labels</h3>
-              <p>Marked vegetarian, dairy-free, and no-pork options.</p>
+
+            <article class="panel tilt-card card-glow reveal" style="--delay: 3;">
+              <div class="panel-media">
+                <img src="assets/images/menu-counter.jpg" alt="Cafe counter">
+              </div>
+              <span class="panel-kicker">Spread</span>
+              <h3>Meeting table</h3>
+              <p>Mixed sandwiches, wraps, salad, sweets, and cold drinks for longer sessions.</p>
+              <strong>Custom quote</strong>
             </article>
           </div>
+        </div>
+      </section>
 
-          <div class="cta-banner reveal">
-            <div>
-              <div class="eyebrow">Ready to ask?</div>
-              <h2>Use the contact page as the inquiry path.</h2>
-              <p>This demo keeps the conversion path simple instead of building a complex order system.</p>
+      <section class="section section-sand">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow">Good fit for</div>
+            <h2>Real local use cases.</h2>
+          </div>
+
+          <div class="use-grid three">
+            <article class="story-card tilt-card card-glow reveal" style="--delay: 1;">
+              <div class="kicker">Office lunch</div>
+              <h3>Team meetings</h3>
+              <p>Smaller groups that need clean packaging and quick handoff.</p>
+            </article>
+            <article class="story-card tilt-card card-glow reveal" style="--delay: 2;">
+              <div class="kicker">Community</div>
+              <h3>Church or volunteer events</h3>
+              <p>Easy trays and boxed lunches that work for helpers, staff, or guests.</p>
+            </article>
+            <article class="story-card tilt-card card-glow reveal" style="--delay: 3;">
+              <div class="kicker">Family</div>
+              <h3>Birthdays and gatherings</h3>
+              <p>Simple food people actually eat, without a complicated setup.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" style="--hero-image: url('assets/images/shop-interior.jpg');">
+        <div class="container split">
+          <div class="split-copy">
+            <div class="eyebrow reveal">Process</div>
+            <h2 class="reveal" style="--delay: 1;">A cleaner inquiry flow.</h2>
+            <p class="reveal" style="--delay: 2;">For a real business, catering pages should move people from “maybe” to “send quote request” with less hesitation.</p>
+            <div class="process-list">
+              <div class="reveal" style="--delay: 3;"><strong>Step 1</strong> Pick a package or estimate headcount.</div>
+              <div class="reveal" style="--delay: 4;"><strong>Step 2</strong> Send date, pickup time, and dietary notes.</div>
+              <div class="reveal" style="--delay: 5;"><strong>Step 3</strong> Get a quick quote and confirmation.</div>
             </div>
-            <div class="cta-banner-actions">
-              <a class="button button-primary" href="contact.html">Request a quote</a>
-            </div>
+          </div>
+
+          <div class="quote-card on-dark reveal" style="--delay: 2;">
+            <p>“Exactly the kind of page that makes office ordering feel easier instead of more confusing.”</p>
+            <span class="quote-credit">— Fictional catering customer</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow">FAQ</div>
+            <h2>Common catering questions.</h2>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item reveal">
+              <button class="faq-button" type="button" aria-expanded="false">
+                <span>How much notice do you need?</span>
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>For this demo, boxed lunches are shown as 24-hour notice, while larger trays and spreads are shown as 48–72 hours.</p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal" style="--delay: 1;">
+              <button class="faq-button" type="button" aria-expanded="false">
+                <span>Can you label dietary options?</span>
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. Vegetarian, no pork, and other notes can be listed on trays and boxes for easier handoff.</p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal" style="--delay: 2;">
+              <button class="faq-button" type="button" aria-expanded="false">
+                <span>Do you deliver?</span>
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>This demo positions delivery as available for larger orders within the local area, with pickup always available.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-banner tilt-card card-glow reveal">
+          <div>
+            <div class="eyebrow">Ready to ask?</div>
+            <h2>Send a catering inquiry.</h2>
+            <p>Use the contact page to request a quote, ask about headcount, or check date availability.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="contact.html">Contact us</a>
+            <a class="button button-ghost" href="menu.html">See menu items</a>
           </div>
         </div>
       </section>
@@ -141,23 +203,26 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand brand-footer" href="index.html">
+          <a class="brand" href="index.html">
             <span class="brand-mark">B&amp;B</span>
             <span class="brand-text">
               <strong>Brick &amp; Board</strong>
               <span>Sandwich Co.</span>
             </span>
           </a>
-          <p class="footer-note">Fictional demo brand for a warm, premium local sandwich shop website concept.</p>
+          <p class="footer-note">Fictional sandwich shop demo with a warmer, more polished local café feel.</p>
         </div>
+
         <div>
           <h3>Visit</h3>
-          <p>12 Front Street West<br>Riverbend, ON A1A 1A1</p>
+          <p>128 Front Street West<br>Riverton, ON N0N 1N0</p>
         </div>
+
         <div>
           <h3>Hours</h3>
           <p>Mon–Fri: 8am–6pm<br>Sat: 9am–4pm<br>Sun: Closed</p>
         </div>
+
         <div>
           <h3>Contact</h3>
           <p>(519) 555-0142<br>hello@brickandboarddemo.ca</p>
@@ -168,6 +233,7 @@
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
         <div class="container footer-bottom-row">
           <span>© <span id="year"></span> Brick &amp; Board Sandwich Co.</span>
