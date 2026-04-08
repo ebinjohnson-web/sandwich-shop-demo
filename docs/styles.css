@@ -264,14 +264,14 @@ main {
   min-height: 100svh;
   display: grid;
   align-items: center;
-  padding: calc(var(--header-h) + 1.6rem) 0 4rem;
+  padding: calc(var(--header-h) + 1.8rem) 0 4.2rem;
 }
 
 .page-hero {
-  min-height: 38rem;
+  min-height: 33rem;
   display: grid;
   align-items: end;
-  padding: calc(var(--header-h) + 1.6rem) 0 3.5rem;
+  padding: calc(var(--header-h) + 1.2rem) 0 2.8rem;
 }
 
 .hero::before,
@@ -314,8 +314,9 @@ main {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(22, 12, 8, 0.22) 0%, rgba(22, 12, 8, 0.34) 30%, rgba(22, 12, 8, 0.76) 100%),
-    radial-gradient(circle at 50% 18%, rgba(233, 144, 72, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(22, 12, 8, 0.24) 0%, rgba(22, 12, 8, 0.42) 28%, rgba(22, 12, 8, 0.78) 100%),
+    linear-gradient(90deg, rgba(22, 12, 8, 0.32) 0%, rgba(22, 12, 8, 0.08) 44%, rgba(22, 12, 8, 0.34) 100%),
+    radial-gradient(circle at 50% 18%, rgba(233, 144, 72, 0.14), transparent 24%),
     radial-gradient(circle at 86% 74%, rgba(240, 176, 96, 0.12), transparent 22%);
 }
 
@@ -329,7 +330,7 @@ main {
   display: grid;
   justify-items: center;
   text-align: center;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .page-hero-grid {
@@ -345,20 +346,34 @@ main {
 .hero h1,
 .page-hero h1 {
   color: #fff;
-  font-size: clamp(3.4rem, 9vw, 6.9rem);
-  max-width: 10.2ch;
   text-wrap: balance;
+}
+
+.hero h1 {
+  font-size: clamp(3.4rem, 8.2vw, 6.1rem);
+  max-width: 8.8ch;
+  line-height: 0.92;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.8rem, 6.8vw, 5rem);
+  max-width: 7.1ch;
+  line-height: 0.92;
 }
 
 .hero-copy,
 .page-hero-copy {
-  max-width: 42rem;
-  color: rgba(255, 247, 239, 0.9);
-  font-size: clamp(1rem, 2vw, 1.16rem);
+  color: rgba(255, 247, 239, 0.92);
+  font-size: clamp(1rem, 1.8vw, 1.12rem);
+  line-height: 1.55;
+}
+
+.hero-copy {
+  max-width: 38rem;
 }
 
 .page-hero-copy {
-  max-width: 35rem;
+  max-width: 31rem;
 }
 
 .page-hero-photo,
@@ -416,7 +431,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.85rem 1rem;
+  padding: 0.75rem 0.9rem;
   border-radius: 999px;
   background: rgba(255, 248, 239, 0.12);
   border: 1px solid rgba(255, 248, 239, 0.22);
@@ -547,7 +562,7 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.78rem 1rem;
+  padding: 0.72rem 0.95rem;
   border-radius: 999px;
   border: 1px solid rgba(255, 247, 239, 0.18);
   background: rgba(255, 247, 239, 0.12);
@@ -885,13 +900,45 @@ main {
   color: var(--ink);
 }
 
-.package-grid .panel,
 .section-dark .panel,
 .use-case {
   color: #fff;
   background: rgba(255, 247, 239, 0.08);
   border-color: rgba(255, 247, 239, 0.1);
   box-shadow: none;
+}
+
+.package-grid .panel {
+  background: linear-gradient(180deg, rgba(255, 251, 245, 0.96), rgba(245, 236, 225, 0.92));
+  border-color: rgba(48, 28, 18, 0.08);
+  box-shadow: 0 22px 48px rgba(40, 23, 13, 0.08);
+}
+
+.package-grid .panel p,
+.package-grid .panel strong {
+  color: var(--ink-soft);
+}
+
+.package-grid .panel strong {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(201, 109, 44, 0.1);
+  color: var(--accent-deep);
+}
+
+.section-dark .package-grid .panel,
+.section-dark .package-grid .panel p,
+.section-dark .package-grid .panel strong {
+  color: #fff;
+}
+
+.section-dark .package-grid .panel strong {
+  background: rgba(255, 247, 239, 0.1);
+  color: #fff;
 }
 
 .use-case {
@@ -1055,11 +1102,12 @@ main {
 .social-links a {
   display: inline-flex;
   align-items: center;
-  padding: 0.7rem 0.9rem;
+  padding: 0.66rem 0.9rem;
   border-radius: 999px;
-  background: rgba(255, 251, 245, 0.76);
+  background: rgba(255, 251, 245, 0.72);
   border: 1px solid rgba(48, 28, 18, 0.08);
   font-weight: 650;
+  font-size: 0.92rem;
 }
 
 .site-form {
@@ -1154,8 +1202,9 @@ main {
 }
 
 .footer-grid {
-  padding: 4rem 0 2.4rem;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  padding: 4.25rem 0 2.6rem;
+  grid-template-columns: 1.35fr 0.9fr 0.9fr 1.05fr;
+  gap: 1.8rem;
 }
 
 .site-footer h3 {
@@ -1173,6 +1222,7 @@ main {
 
 .footer-note {
   max-width: 18rem;
+  line-height: 1.7;
 }
 
 .footer-bottom {
@@ -1224,6 +1274,53 @@ body.js-ready .reveal.in-view {
 
 .tilt-card:hover {
   box-shadow: 0 36px 90px rgba(40, 23, 13, 0.16);
+}
+
+
+
+.page-home .hero-grid {
+  max-width: 54rem;
+  margin-inline: auto;
+}
+
+.page-home .hero h1 {
+  max-width: 7.6ch;
+}
+
+.page-home .hero-copy {
+  max-width: 34rem;
+}
+
+.page-home .hero-badges {
+  gap: 0.75rem;
+}
+
+.page-home .hero-actions {
+  margin-top: 0.1rem;
+}
+
+.page-hero .page-hero-photo {
+  min-height: 18.5rem;
+}
+
+.page-catering .package-grid .panel h3 {
+  color: var(--ink);
+}
+
+.page-catering .package-grid .panel {
+  min-height: 100%;
+}
+
+.page-catering .package-grid .panel p {
+  max-width: 18rem;
+}
+
+.page-contact .contact-card h2 {
+  font-size: clamp(1.7rem, 2.2vw, 2.4rem);
+}
+
+.page-contact .form-panel h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1356,9 +1453,12 @@ body.js-ready .reveal.in-view {
     font-size: 0.68rem;
   }
 
-  .hero h1,
+  .hero h1 {
+    font-size: clamp(3rem, 14vw, 4.4rem);
+  }
+
   .page-hero h1 {
-    font-size: clamp(3rem, 14vw, 4.6rem);
+    font-size: clamp(2.65rem, 13vw, 4rem);
   }
 
   .section {
