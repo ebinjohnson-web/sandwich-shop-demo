@@ -1,5 +1,5 @@
-
 document.documentElement.classList.add("has-js");
+
 window.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("js-ready");
 
@@ -34,7 +34,11 @@ window.addEventListener("DOMContentLoaded", () => {
     menuToggle.addEventListener("click", (event) => {
       event.stopPropagation();
       const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-      isOpen ? closeMenu() : openMenu();
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
     siteNav.querySelectorAll("a").forEach((link) => {
@@ -81,19 +85,19 @@ window.addEventListener("DOMContentLoaded", () => {
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-visible");
+          entry.target.classList.add("in-view");
           observer.unobserve(entry.target);
         });
       },
       {
-        threshold: 0.14,
-        rootMargin: "0px 0px -10% 0px"
+        threshold: 0.12,
+        rootMargin: "0px 0px -8% 0px"
       }
     );
 
     revealItems.forEach((item) => observer.observe(item));
   } else {
-    revealItems.forEach((item) => item.classList.add("is-visible"));
+    revealItems.forEach((item) => item.classList.add("in-view"));
   }
 
   if (tiltCards.length && window.matchMedia("(hover: hover)").matches) {
@@ -108,8 +112,8 @@ window.addEventListener("DOMContentLoaded", () => {
         const rect = card.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
-        const rotateY = ((x / rect.width) - 0.5) * 8;
-        const rotateX = (((y / rect.height) - 0.5) * -8);
+        const rotateY = ((x / rect.width) - 0.5) * 7;
+        const rotateX = (((y / rect.height) - 0.5) * -7);
         card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
         card.style.setProperty("--cursor-x", `${(x / rect.width) * 100}%`);
         card.style.setProperty("--cursor-y", `${(y / rect.height) * 100}%`);
@@ -130,11 +134,12 @@ window.addEventListener("DOMContentLoaded", () => {
       slides.forEach((slide, index) => {
         slide.classList.toggle("is-active", index === nextIndex);
       });
+
       dots.forEach((dot, index) => {
         dot.classList.toggle("is-active", index === nextIndex);
         dot.setAttribute("aria-selected", index === nextIndex ? "true" : "false");
-        dot.tabIndex = index === nextIndex ? 0 : -1;
       });
+
       activeIndex = nextIndex;
     };
 
@@ -142,9 +147,8 @@ window.addEventListener("DOMContentLoaded", () => {
       if (slides.length < 2) return;
       clearInterval(timer);
       timer = window.setInterval(() => {
-        const nextIndex = (activeIndex + 1) % slides.length;
-        showSlide(nextIndex);
-      }, 4200);
+        showSlide((activeIndex + 1) % slides.length);
+      }, 4500);
     };
 
     dots.forEach((dot, index) => {
@@ -161,13 +165,16 @@ window.addEventListener("DOMContentLoaded", () => {
   faqItems.forEach((item) => {
     const button = item.querySelector(".faq-button");
     if (!button) return;
+
     button.addEventListener("click", () => {
       const isOpen = item.classList.contains("is-open");
+
       faqItems.forEach((faq) => {
         faq.classList.remove("is-open");
         const faqButton = faq.querySelector(".faq-button");
         if (faqButton) faqButton.setAttribute("aria-expanded", "false");
       });
+
       if (!isOpen) {
         item.classList.add("is-open");
         button.setAttribute("aria-expanded", "true");
