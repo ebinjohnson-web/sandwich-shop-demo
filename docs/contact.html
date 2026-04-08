@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Brick &amp; Board Sandwich Co.</title>
+  <meta name="description" content="Contact Brick & Board Sandwich Co. for orders, catering, and store details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Brick & Board Sandwich Co. home">
+          <span class="brand-mark">B&amp;B</span>
+          <span class="brand-text">
+            <strong>Brick &amp; Board</strong>
+            <span>Sandwich Co.</span>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="catering.html">Catering</a>
+          <a class="is-active" href="contact.html">Contact</a>
+          <a class="nav-cta" href="contact.html">Order now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-media parallax-media" data-parallax style="background-image: url('assets/images/shop-interior.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+          <div class="eyebrow reveal">Contact</div>
+          <h1 class="reveal">Order, ask about catering, or stop by for lunch.</h1>
+          <p class="reveal">This demo uses straightforward contact details and one simple inquiry form.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="contact-stack reveal">
+            <article class="contact-card">
+              <div class="eyebrow">Visit</div>
+              <h2>Brick &amp; Board Sandwich Co.</h2>
+              <p>12 Front Street West<br>Riverbend, ON A1A 1A1</p>
+            </article>
+
+            <article class="contact-card">
+              <div class="eyebrow">Hours</div>
+              <p>Mon–Fri: 8am–6pm<br>Sat: 9am–4pm<br>Sun: Closed</p>
+            </article>
+
+            <article class="contact-card">
+              <div class="eyebrow">Reach us</div>
+              <p>(519) 555-0142<br>hello@brickandboarddemo.ca</p>
+              <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="form-panel reveal">
+            <div class="eyebrow">Inquiry form</div>
+            <h2>Tell us what you need.</h2>
+            <form class="site-form" action="#">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name">
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com">
+              </label>
+              <label>
+                <span>Phone</span>
+                <input type="tel" name="phone" placeholder="(555) 555-5555">
+              </label>
+              <label>
+                <span>Inquiry type</span>
+                <select name="type">
+                  <option>General question</option>
+                  <option>Pickup order</option>
+                  <option>Catering quote</option>
+                </select>
+              </label>
+              <label class="form-full">
+                <span>Message</span>
+                <textarea name="message" rows="6" placeholder="Tell us the date, group size, or what you want to order."></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="button button-primary" type="submit">Send inquiry</button>
+                <span class="form-note">Demo form only. No backend is connected.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-sand">
+        <div class="container cta-banner reveal">
+          <div>
+            <div class="eyebrow">Need the menu first?</div>
+            <h2>Review the food and pricing layout.</h2>
+          </div>
+          <div class="cta-banner-actions">
+            <a class="button button-primary" href="menu.html">Open menu</a>
+            <a class="button button-secondary" href="catering.html">Open catering</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark">B&amp;B</span>
+            <span class="brand-text">
+              <strong>Brick &amp; Board</strong>
+              <span>Sandwich Co.</span>
+            </span>
+          </a>
+          <p class="footer-note">Fictional demo brand for a warm, premium local sandwich shop website concept.</p>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <p>12 Front Street West<br>Riverbend, ON A1A 1A1</p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Mon–Fri: 8am–6pm<br>Sat: 9am–4pm<br>Sun: Closed</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>(519) 555-0142<br>hello@brickandboarddemo.ca</p>
+          <div class="social-links">
+            <a href="contact.html">Instagram</a>
+            <a href="contact.html">Facebook</a>
+            <a href="contact.html">TikTok</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-row">
+          <span>© <span id="year"></span> Brick &amp; Board Sandwich Co.</span>
+          <span>Static HTML, CSS, and JavaScript demo</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

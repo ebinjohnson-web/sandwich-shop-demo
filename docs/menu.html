@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Brick &amp; Board Sandwich Co.</title>
+  <meta name="description" content="Browse the fictional menu for Brick & Board Sandwich Co. including sandwiches, salads, soups, sides, and lunch combos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Brick & Board Sandwich Co. home">
+          <span class="brand-mark">B&amp;B</span>
+          <span class="brand-text">
+            <strong>Brick &amp; Board</strong>
+            <span>Sandwich Co.</span>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="is-active" href="menu.html">Menu</a>
+          <a href="catering.html">Catering</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cta" href="contact.html">Order now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-media parallax-media" data-parallax style="background-image: url('assets/images/signature-board.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+          <div class="eyebrow reveal">Menu</div>
+          <h1 class="reveal">Clear categories. Strong item names. Easy scanning.</h1>
+          <p class="reveal">A fictional lunch menu with practical pricing and short descriptions.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="menu-grid">
+            <article class="menu-panel reveal">
+              <div class="menu-panel-header">
+                <div class="eyebrow">Signature sandwiches</div>
+                <h2>House favourites</h2>
+              </div>
+
+              <div class="menu-list">
+                <div class="menu-item">
+                  <div>
+                    <h3>The King Street Stack</h3>
+                    <p>Roasted chicken, smoked cheddar, pickled slaw, greens, house spread.</p>
+                  </div>
+                  <strong>$14.50</strong>
+                </div>
+                <div class="menu-item">
+                  <div>
+                    <h3>The Market Melt</h3>
+                    <p>Turkey, provolone, tomato, greens, pressed warm on seeded bread.</p>
+                  </div>
+                  <strong>$13.75</strong>
+                </div>
+                <div class="menu-item">
+                  <div>
+                    <h3>Boardroom Beef</h3>
+                    <p>Roast beef, horseradish aioli, crispy onions, greens, aged cheddar.</p>
+                  </div>
+                  <strong>$15.25</strong>
+                </div>
+                <div class="menu-item">
+                  <div>
+                    <h3>Front Street Veg</h3>
+                    <p>Grilled vegetables, whipped feta, greens, tomato jam, herbs.</p>
+                  </div>
+                  <strong>$13.25</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-panel reveal">
+              <div class="menu-panel-header">
+                <div class="eyebrow">Wraps and lighter picks</div>
+                <h2>Fast lunch options</h2>
+              </div>
+
+              <div class="menu-list">
+                <div class="menu-item">
+                  <div>
+                    <h3>Chicken Caesar Wrap</h3>
+                    <p>Chicken, parmesan, romaine, bacon crumble, creamy dressing.</p>
+                  </div>
+                  <strong>$12.95</strong>
+                </div>
+                <div class="menu-item">
+                  <div>
+                    <h3>Turkey Crunch Wrap</h3>
+                    <p>Turkey, provolone, peppers, slaw, greens, honey mustard.</p>
+                  </div>
+                  <strong>$12.75</strong>
+                </div>
+                <div class="menu-item">
+                  <div>
+                    <h3>Soup + Half Sandwich</h3>
+                    <p>Daily soup with your choice of half signature sandwich.</p>
+                  </div>
+                  <strong>$11.95</strong>
+                </div>
+                <div class="menu-item">
+                  <div>
+                    <h3>House Green Bowl</h3>
+                    <p>Greens, cucumber, tomato, herbs, seeds, bright vinaigrette.</p>
+                  </div>
+                  <strong>$9.95</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-grid menu-grid-bottom">
+            <article class="menu-panel reveal">
+              <div class="menu-panel-header">
+                <div class="eyebrow">Sides</div>
+                <h2>Add-ons</h2>
+              </div>
+
+              <div class="menu-list compact-list">
+                <div class="menu-item"><div><h3>Rosemary chips</h3></div><strong>$2.75</strong></div>
+                <div class="menu-item"><div><h3>Dill pickle spear</h3></div><strong>$1.50</strong></div>
+                <div class="menu-item"><div><h3>Tomato soup cup</h3></div><strong>$4.25</strong></div>
+                <div class="menu-item"><div><h3>House cookie</h3></div><strong>$2.95</strong></div>
+              </div>
+            </article>
+
+            <article class="menu-panel reveal">
+              <div class="menu-panel-header">
+                <div class="eyebrow">Drinks</div>
+                <h2>Cold and hot</h2>
+              </div>
+
+              <div class="menu-list compact-list">
+                <div class="menu-item"><div><h3>Fresh lemonade</h3></div><strong>$3.95</strong></div>
+                <div class="menu-item"><div><h3>Iced tea</h3></div><strong>$3.75</strong></div>
+                <div class="menu-item"><div><h3>Craft soda</h3></div><strong>$3.50</strong></div>
+                <div class="menu-item"><div><h3>Drip coffee</h3></div><strong>$2.95</strong></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="cta-banner reveal">
+            <div>
+              <div class="eyebrow">Need food for a group?</div>
+              <h2>See the catering layout built into the demo.</h2>
+            </div>
+            <div class="cta-banner-actions">
+              <a class="button button-primary" href="catering.html">See catering</a>
+              <a class="button button-secondary" href="contact.html">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark">B&amp;B</span>
+            <span class="brand-text">
+              <strong>Brick &amp; Board</strong>
+              <span>Sandwich Co.</span>
+            </span>
+          </a>
+          <p class="footer-note">Fictional demo brand for a warm, premium local sandwich shop website concept.</p>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <p>12 Front Street West<br>Riverbend, ON A1A 1A1</p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Mon–Fri: 8am–6pm<br>Sat: 9am–4pm<br>Sun: Closed</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>(519) 555-0142<br>hello@brickandboarddemo.ca</p>
+          <div class="social-links">
+            <a href="contact.html">Instagram</a>
+            <a href="contact.html">Facebook</a>
+            <a href="contact.html">TikTok</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-row">
+          <span>© <span id="year"></span> Brick &amp; Board Sandwich Co.</span>
+          <span>Static HTML, CSS, and JavaScript demo</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
