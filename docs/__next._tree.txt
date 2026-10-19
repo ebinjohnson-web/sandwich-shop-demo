@@ -1,0 +1,7 @@
+:HL["/sandwich-shop-demo/_next/static/chunks/0yzs2ng8jg7mt.css","style"]
+:HL["/sandwich-shop-demo/assets/images/signature-board.jpg","image"]
+:HL["/sandwich-shop-demo/assets/images/display-case.jpg","image"]
+:HL["/sandwich-shop-demo/assets/images/catering-platter.jpg","image"]
+:HL["/sandwich-shop-demo/assets/images/cafe-plate.jpg","image"]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"4PEiei8o6IDjQNjthgxUH","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
