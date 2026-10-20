@@ -1585,8 +1585,6 @@ body.js-ready .reveal.in-view {
   font-size: clamp(2rem, 3vw, 3rem);
 }
 
-
-
 @media (max-width: 1080px) {
   .feature-grid.three,
   .info-grid.three,

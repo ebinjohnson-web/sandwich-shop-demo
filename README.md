@@ -28,3 +28,7 @@ GitHub Pages continues to serve docs/ on main. Node.js runs the Next.js build; G
 - tools/: static export publishing, validation, local preview
 
 Forms demonstrate the interface only. They do not send, store, or subscribe submitted information.
+
+## Photography
+
+Large, locally hosted Pexels photographs are credited in [PHOTO-CREDITS.md](PHOTO-CREDITS.md) and the site footer. The images illustrate this fictional concept; they are not presented as the organisation’s actual staff, members, or client work.

@@ -1,5 +1,5 @@
-:HL["/sandwich-shop-demo/_next/static/chunks/0yzs2ng8jg7mt.css","style"]
+:HL["/sandwich-shop-demo/_next/static/chunks/3ee733f4p1g4q.css","style"]
 :HL["/sandwich-shop-demo/assets/images/display-case.jpg","image"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"catering","h":96,"c":"$Q2"}]]
-0:{"b":"4PEiei8o6IDjQNjthgxUH","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"ltD-D49ugNI2Df_Eisg6M","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

@@ -5,7 +5,10 @@ export default function Motion() {
   const pathname = usePathname();
   useEffect(() => {
     document.documentElement.classList.add("has-js");
-    document.body.classList.toggle("capture-mode", new URLSearchParams(location.search).has("capture"));
+    document.body.classList.toggle(
+      "capture-mode",
+      new URLSearchParams(location.search).has("capture"),
+    );
     document.body.classList.add("js-ready");
     const items = [...document.querySelectorAll("[data-reveal],.reveal")];
     const observer = new IntersectionObserver(

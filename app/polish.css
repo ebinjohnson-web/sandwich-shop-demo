@@ -181,6 +181,20 @@ body {
   }
 }
 
-.capture-mode *{animation:none!important;transition:none!important}.capture-mode [data-reveal],.capture-mode .reveal{opacity:1!important;transform:none!important}
+.capture-mode * {
+  animation: none !important;
+  transition: none !important;
+}
+.capture-mode [data-reveal],
+.capture-mode .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
 
-.skip-link:not(:focus){clip-path:inset(50%);height:1px;width:1px;overflow:hidden;white-space:nowrap}
+.skip-link:not(:focus) {
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
